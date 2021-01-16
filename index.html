@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="gridbox.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Spirax&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -19,11 +20,14 @@
                     <li><a href="#"> Orders </a> </li>
                     <li> <a href="#">Openening hours</a> </li>
                     <li> <a href="#">Shop</a></li>
-                    <li><a href="#">Our social media </a></li>
+                    <li><input type="text" name="Search" placeholder="Search.." </li>
+
                 </ul>
             </nav>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/sL3iCtFga3Q?autoplay=1&mute=1" frameborder="0"
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/sL3iCtFga3Q?playlist=sL3iCtFga3Q&loop=1;&autoplay=1&mute=1"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
@@ -54,7 +58,7 @@
             <nav class="sidebar">
                 <ul>
                     <p>
-                        <li><a href="#">Waves</a></li><br> <img src="./waves/waves.jpg" alt="waves" width="150px">
+                        <li><a href="./Waves.html">Waves</a></li><br> <img src="./waves/waves.jpg" alt="waves" width="150px">
                     </p>
                     <p>
                         <li><a href="#"> Curls </a> </li> <br><img src="./waves/twist.jfif" alt="curls" width="150px">
@@ -75,10 +79,68 @@
 
         </div>
 
-        <div class="footer">
-            <h2></h2>
 
-            ©2020 by Itzhack's BarberShop.<span><a href="#">Back to Top</a></span>
+
+        <div class="footer">
+
+            <hr color="white" style="size: 4px;"> 
+
+            
+            <form class="review">
+                <div class="name input">
+                    <label>
+                        Name:
+                        <input name="text" name="name">
+                    </label>
+                </div>
+    
+                <div class="input">
+                    <label class="number">
+                        Email:
+                        <input name="text" name="number">
+                    </label>
+                </div>
+                <div class="adress input">
+                    <label>
+                        Adress:
+                        <input name="text" name="full adress">
+                    </label>
+                </div>
+    
+    
+                <div class="feedback input">
+                    <lable>
+                        Feedback:
+                        <select name="category">
+                            <option value="mechanic">&#128578</option>
+                            <option value="electric">&#128577</option>
+    
+                        </select>
+                    </lable>
+                </div>
+                <br>
+                <div class="message input">
+                    <lable>
+                        Your review:
+                        <textarea name="message"></textarea>
+                    </lable>
+                </div>
+                <div>
+                    <button type="submit">send message</button>
+                    <button type="reset">Reset</button>
+                </div>
+                <a href="#">Report</a>
+    
+            </form>
+            <h2></h2>
+            <span class="top"><a href="#">Back to Top</a></span>
+            ©2020 by Itzhack's BarberShop.
+
+             <div class="logo"><img src="./waves/pngwing.com.png" width="40px" alt=""></div>
+            <div class="logo"><img src="./waves/facebook.png" alt="" width="40px"></div>
+
+
+            
 
 
 
