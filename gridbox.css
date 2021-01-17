@@ -4,24 +4,34 @@
     display: grid;
     grid-template-areas: 
     " header header header header"
-    "sidebar sidebar section section  "
-    "sidebar sidebar section section  "
+    "section section sidebar sidebar "
+    " section section sidebar sidebar "
     "footer footer footer footer ";
 
-    /* grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%; */
+     grid-template-columns: repeat(4);
+    /* grid-template-rows: 20% 20% 20% 20% 20%; */ 
 
 }
-@media(max-width:500px){
-  body{
-  grid-template-areas: 
-  " header"
-  " section "
-  " sidebar "
-  "footer ";
-  }
+
+
+  
+@media (max-width:700px){
+ .grid{
+   display: grid;
+    grid-template-areas: 
+    " header  "
+    "section   "
+    " sidebar  "
+    "footer  ";
+ }
+
+ 
+
 
 }
+
+
+
 
  .header{
      height: 100vh;
@@ -32,8 +42,8 @@
      justify-content: space-between;
      
  }
-
- ul {
+/* home menue */
+ .header-nav {
 
   position: sticky;
   top: 0;
@@ -44,11 +54,11 @@
   background-color: #333;
 }
 
-li {
+.header-nav li {
   float: left;
 }
 
-li a {
+.header-nav li a {
   display: block;
   color: white;
   text-align: center;
@@ -56,57 +66,10 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.header-nav li a:hover {
   background-color: black;}
 
 
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: relative;
-    background-color: #333;
-    min-width: 60px;
-    padding: 12px 16px;
-    z-index: 1;
-    
-  }
-  .dropdown-content li{ 
-    display: inline-block;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-
-} 
-
-ul .nav li{
-  float: left;
-}
-ul .nav li ul li{
-  float: none;
-}
-ul .nav li ul{
-  position: absolute;
-  display: none;
-}
-ul .nav li:hover ul{
-  display: block;
-}
-ul .nav li a{
-display: block;
-padding: 5px 10px;
-color: teal;
-text-decoration: none;
-border-bottom: 1px solid white;
-}
-
-ul .nav li a:hover{
-  background-color: white;
-}
 
 
 {
@@ -126,7 +89,7 @@ box-sizing: border-box;
     border: 1px solid white;
     background-color: black;
     text-align: center;
-    overflow: hidden;
+    
   }
   
   header h1 {
@@ -137,15 +100,14 @@ box-sizing: border-box;
     font-weight: bold;
     letter-spacing: 11px;
     text-align: center;
-    
     display: inline-block;
   }
-  
+  /* serach bar */
   input[type=text]{
     margin-top: 10px;
     
   }
-  
+  /* background video header */
   iframe {
     position: absolute;
     top: 0;
@@ -158,11 +120,14 @@ box-sizing: border-box;
     object-position: center;
     object-fit: cover;
   }
+
+
  .sidebar{
-    height: 100vh;
+    /* height: 100vh; */
      display: grid;
      grid-area: sidebar;
      color: white;
+     
      
      
  }
@@ -170,6 +135,7 @@ box-sizing: border-box;
  .sidebar img{
    border-radius: 15%;
    transition: ease-in-out 1s;
+   
  }
 
  .sidebar img:hover{
@@ -179,19 +145,21 @@ box-sizing: border-box;
  }
 
 
-
  .sidebar h2{
   font-family: 'Spirax', cursive;
    text-decoration:underline;
+   text-align: center;
  }
 
  .sidebar ul{
-   position: relative;
-   right: 100px;
+   list-style: none;
+   text-align: center;
+   border: 2px white solid;
    
  }
  
  .section{
+    /* height: 100vh; */
      display: grid;
      grid-area: section;
      color:white;
@@ -199,8 +167,11 @@ box-sizing: border-box;
      opacity: 0.8;
      font-family: 'Spirax', cursive;
      
+     
  }
- span .top{
+
+ /* scissors animation */
+ .scissors{
    
    position: absolute;
   animation-name: spin;
@@ -227,6 +198,9 @@ box-sizing: border-box;
 .chair{
   
     filter: grayscale();
+    box-shadow: white 5px 5px 20px;
+    margin-left: 15%;
+    
 
 }
 .chair:hover{
@@ -234,6 +208,8 @@ box-sizing: border-box;
   filter:none;
 
 }
+
+/* sidebar nav */
  .nav{
      display: grid;
      grid-area: nav;
@@ -252,6 +228,9 @@ box-sizing: border-box;
  }
 
 
+
+
+ /* feedback form */
  .review{
    display: block;
    text-align: center;
@@ -259,7 +238,6 @@ box-sizing: border-box;
 
  }
 
- 
 
  input[name="full adress"]{
   margin-right: 7px;
