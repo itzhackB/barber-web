@@ -9,14 +9,35 @@
     <style>
         body {
             /* רקע */
-            background-image: url(./images/barber-shop-3519744_960_720.png)
+            background-image: url(./images/barber-shop-3519744_960_720.png);
+            background-image: linear-gradient(135deg, #79F1A4 10%, #0E5CAD 100%);
+
         }
 
+        .button {
+            border-radius: 15%;
+            background-color: #222;
+            border: none;
+            color: khaki;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            left: 90%;
+            position: sticky;
+            top: 0%;
+        }
+
+
         .images {
-            display: block;
+            display: flex;
+            justify-content: center;
             margin-left: auto;
             margin-right: auto;
             width: 50%;
+
         }
 
         /* סטייל פסקאות */
@@ -27,34 +48,63 @@
             color: black;
             font-size: 20px;
             line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            border: 2px black solid;
+            text-align: center;
+            opacity: 0.6;
+
         }
+
+        .paragraph:hover {
+            opacity: 1;
+        }
+
+
+
 
         .titles {
             font-family: sans-serif;
             color: rgb(226, 225, 144);
             background-color: black;
             opacity: 0.7;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .images {
+            border-radius: 15%;
+            border: solid 2px;
+            ;
+
         }
     </style>
 </head>
 
 <body>
 
+
+     <a class="button" href="../Waves.html">Back</a>
+
     <h1 align="center" class="titles">How To Get Waves: The Ultimate Guide</h1>
     <section class=p_1>
+
         <ul>
             <li>
                 <h2 class="titles">Get A Haircut.</h2>
             </li>
         </ul>
-        <p class="paragraph"> Another part of creating the perfect canvas is getting the right haircut. Go to your
+        <p class="paragraph"> Another part of creating the perfect canvas is getting the right haircut.<br> Go to your
             barber, tell him
             you’re
             trying to get waves and ask for a short cut. A good rule of thumb is that you should have a close cut,
             but it
             shouldn’t be short enough to see your scalp</p>
-        <img src="./image-how to get waves/waves cut.webp" alt="200" width="200" class="images">
+        <img class="images" src="./image-how to get waves/waves cut.webp" alt="200" width="200">
 
         <ul>
             <li>
@@ -86,7 +136,7 @@
                 <th><img src="./image-how to get waves/durag.webp" alt="200" width="400" class="images"></th>
                 <th><iframe width="560" height="315" src="https://www.youtube.com/embed/kNQoZ0PjiP0" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen ></iframe></th>
+                        allowfullscreen></iframe></th>
             </tr>
         </table>
         <p class="paragraph">
